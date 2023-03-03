@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 10%;
+}
+
+
+main .content{
+    display: flex;
+    overflow: hidden;
+}   
+
+main .content section:nth-child(1){
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Light-royal-blue-background);
+    align-items: center;
+    color: white;
+    padding: 30px 40px;
+    flex: 1;
+} 
+main .content section:nth-child(1) h3,
+main .content section:nth-child(1) p, 
+main .content section:nth-child(1) div span
+{
+    color: var(--Light-lavender)
+}
+
+main .content section:nth-child(1) h3{ margin: 20px 0px }
+
+main .content section:nth-child(1) div{
+    background-color: var(--Violet-blue-circle);
+    padding: 30px 50px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+main .content section:nth-child(1) div h1{
+    font-size: 80px;
+}
+
+main .content section:nth-child(1) p{
+    font-size: 15px;
+    margin: 20px 0px;
+}
+
+main .content section:nth-child(2){
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+} 
+
+main .content section:nth-child(2) h3{
+    color: var(--Dark-gray-blue);
+    margin-bottom: 20px;
+} 
+
+main .content section:nth-child(2) .summary{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+main .content section:nth-child(2) .summary .left,
+.content section:nth-child(2) .summary .right{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+main .content section:nth-child(2) .reaction{
+    background-color: hsl(0deg 100% 90.73%)
+}
+main .content section:nth-child(2) .reaction .left span{
+    font-weight: bold;
+    color: var(--Light-red)
+}
+
+main .content section:nth-child(2) .memory{
+    background-color: hsl(39deg 100% 85.13%)
+}
+main .content section:nth-child(2) .memory .left span{
+    font-weight: bold;
+    color: var(--yellow)
+}
+
+main .content section:nth-child(2) .verbal{
+    background-color: hsl(166deg 52.26% 80.21%)
+}
+main .content section:nth-child(2) .verbal .left span{
+    font-weight: bold;
+    color: var(--teal)
+}
+
+main .content section:nth-child(2) .visual{
+    background-color: hsl(234deg 100% 79.96%)
+}
+main .content section:nth-child(2) .visual .left span{
+    font-weight: bold;
+    color: var(--blue)
+}
+
+main .content section:nth-child(2) .summary .right span:nth-child(1) {
+    color: var(--Dark-gray-blue); 
+    font-weight: bold;
+}
+main .content section:nth-child(2) .summary .right span:nth-child(2) {
+    color: var(--Pale-blue);
+}
+
+main .content section:nth-child(2) button {
+    color: var(--White);
+    background-color: var(--Dark-gray-blue);
+    outline: none;
+    border: none;
+    padding: 15px 0px;
+    text-transform: capitalize;
+    border-radius: 40px;
+    margin: 20px 0px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-weight: bold;
+    font-size: 18px;
+}
+main .content section:nth-child(2) button:hover {
+    background-color: var(--Light-royal-blue-background);
+}
+
+footer { font-size: 11px; text-align: center; }
+footer a { color: hsl(228, 45%, 44%); }
